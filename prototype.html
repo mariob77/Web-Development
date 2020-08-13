@@ -6,6 +6,7 @@
     Assurance Customer Survey">
     <title>Megabite Computer Services Survey</title>
     </head>
+    <form>
     </body>
       <img src= "logo.jpg"><h2> Megabite Computer Services Customer Satisfaction Survey</h2>
       <h6> Dear [First Name]<h6>
@@ -23,5 +24,19 @@
       <br/>
       <p> In what ways were you satsified with your service?</p>
       <input type = "text">
+        <br/>
       <p> In what ways could we improve?</p>
       <input type = "text">
+      <br/>
+      <br/>
+        <!-- Experimental part where we cna test out how to send data-->
+        <from action = "info.php" method = "post">
+        <input type = "text" name="username" value = "Username"/>
+	<br/>
+        <input type=" text"name="email" value = "Password"/>
+	<br/>
+        <!-- Initiates the transaction with the server-->
+        <input type = "submit" value="Submit"/> 
+        </form>
+       <!-- Also consider how to transfer data to an excel sheet or something -->
+        
